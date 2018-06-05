@@ -31,7 +31,7 @@ https://aws.amazon.com/ec2/pricing/on-demand/ and Amazon's S3 pricing page:  htt
 
 This terraform is launched from the gateway-apply.sh script found in this project.  You will need to run this file during the build of your project and create your terraform similar to that in the readme.md.  Run the gateway-apply.sh script to stand up your environment.
 
-Note - to tear down a gateway environment, the gateway must first be deleted via the aws console, then destroyed via terraform.  When you run the gateway.sh script, it will automatically create a script that can be used to tear down the environment.
+Note - to tear down a gateway environment, the gateway must first be deleted, then the underlying infrastructure destroyed via terraform.  When you run the gateway.sh script, it will automatically create a script that can be used to tear down the environment.
 
 ```
 bash ./gateway-apply.sh
