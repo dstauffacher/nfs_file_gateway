@@ -1,13 +1,9 @@
 # file_gateway_automation
+# A new version of this work can be found here:  https://github.com/dstauffacher/terraform_file_gateway
 
-## Description and Purpose
+## This module has been deprecated, as Terraform now supports the file gateway activation process.  Use the new link above.
 
-This module launches a copy of the Amazon Storage Gateway AMI, attaches a 150GB cache volume, and configures the gateway instance as a file gateway.  Storage Gateways require large compute and disk resources, and should not be launched for storing small (sub Terabyte size) data sets.
-
-The initial expected use cases for this module are to provide a backup target for servers running on EC2 instances and to provide an install media storage location for Windows Servers.
-
-Note that for Windows servers, the NFS client will need to be installed prior to mounting this file gateway from the windows server.  
-
+## The following is for reference purposes only
 #### This module creates the following infrastructure:
 * aws_instance (default is m4.xlarge) launched from the storage gateway AMI
     * with attached ebs volume (default 150 GB, GP2) attached to the EC2 instance
